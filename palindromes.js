@@ -1,22 +1,15 @@
 let num = "kayak";
 function ispalindrome(num){
-    let str= String(num);
-
-    console.log(typeof(str));
-    let arr = str.split('');
-    console.log(arr);
-    let str2= arr.toString();
-    console.log(typeof(str2));
-    let reverse = arr.reverse();
-
-    console.log(reverse);
-    let reversestr=reverse.toString();
-    console.log(typeof(reversestr));
-    if(str2===reversestr){
-        return "ispalindrome";
+    let str= String(num);               //converting value to a string
+    let arr = str.split('');            //converting string to array
+    let str2= arr.toString();           //converting array to string
+    let reverse = arr.reverse();        //reversing arr
+    let reversestr=reverse.toString();  //converting reverse to a string
+    if(str2===reversestr){              //checking conditions
+        return true;
     }
     else{
-        return"not a plaindrome";
+        return false;
     }
 }
 console.log(ispalindrome(num));
