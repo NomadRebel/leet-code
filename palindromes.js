@@ -1,7 +1,7 @@
 const num = 121;
 function ispalindrome(num){
-    const str = num.split("").toString();
-    const reverse = num.split("").reverse().toString();        
+    const str = String(num).split("").toString();
+    const reverse = String(num).split("").reverse().toString();        
     if(str==reverse){              
         return true;
     }
